@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - Cửa Hàng Giày</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="back-home">
+                <!-- Biểu tượng SVG mũi tên quay lại -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="back-icon"><path d="M14.71 16.29a1 1 0 0 0 1.42-1.42L12.41 11H21a1 1 0 0 0 0-2H12.41l3.71-3.71a1 1 0 0 0-1.42-1.42L8.29 11.29a1 1 0 0 0 0 1.42l6.42 6.42z"/></svg>
+                Về Trang Chủ
+            </a>
+            <h1>Giỏ Hàng</h1>
+            <button class="chat-btn">
+                <!-- Biểu tượng SVG chat -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="chat-icon"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.11 2.12 7.74 5.27 9.8-.08-.42-.13-.85-.13-1.29v-1.68c-2.05-.77-3.61-2.66-3.61-4.83 0-2.76 2.24-5 5-5h8c2.76 0 5 2.24 5 5 0 2.17-1.56 4.06-3.61 4.83v1.68c0 .44-.05.87-.13 1.29C19.88 19.74 22 16.11 22 12 22 6.48 17.52 2 12 2zm0 15.5c-.72 0-1.44-.18-2.07-.51-.26-.14-.48-.31-.67-.5l-.6-.6-.35.1c-.27.08-.56.13-.85.13-1.25 0-2.25-1-2.25-2.25v-1.5c0-.75.37-1.5 1-2 2.67-1.56 5.68-2.68 8.84-2.68s6.17 1.12 8.84 2.68c.63.5 1 1.25 1 2v1.5c0 1.25-1 2.25-2.25 2.25-.29 0-.58-.05-.85-.13l-.35-.1-.6.6c-.19.19-.41.36-.67.5-.63.33-1.35.51-2.07.51z"/></svg>
+                Chat ngay
+            </button>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="cart">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <input type="checkbox" class="item-checkbox">
+                    <img src="image/shoes1.png" alt="Giày 1" class="item-image">
+                    <div class="item-details">
+                        <h2 class="item-title">Giày Thể Thao</h2>
+                        <p class="item-price">$49.99</p>
+                        <div class="item-quantity">
+                            <label for="quantity-1">Số lượng:</label>
+                            <input type="number" id="quantity-1" value="1" min="1">
+                        </div>
+                        <button class="edit-item">Sửa</button>
+                        <button class="remove-item">Xóa</button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <input type="checkbox" class="item-checkbox">
+                    <img src="image/shoes2.png" alt="Giày 2" class="item-image">
+                    <div class="item-details">
+                        <h2 class="item-title">Giày Da</h2>
+                        <p class="item-price">$79.99</p>
+                        <div class="item-quantity">
+                            <label for="quantity-2">Số lượng:</label>
+                            <input type="number" id="quantity-2" value="1" min="1">
+                        </div>
+                        <button class="edit-item">Sửa</button>
+                        <button class="remove-item">Xóa</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart-summary">
+                <h3>Tóm Tắt Đơn Hàng</h3>
+                <p><strong>Tổng cộng:</strong> $129.98</p>
+                <div class="voucher-section">
+                    <label for="voucher-code">Nhập mã giảm giá:</label>
+                    <input type="text" id="voucher-code" placeholder="Nhập mã...">
+                    <button class="apply-voucher">Áp dụng</button>
+                </div>
+                <button class="checkout-btn">Thanh Toán</button>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

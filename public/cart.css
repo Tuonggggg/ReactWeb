@@ -1,0 +1,261 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    background: linear-gradient(to right,#9933ff, #ff33ff, #ff3399);
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right,#9933ff, #ff33ff, #ff3399);
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-home {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.back-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.chat-btn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.chat-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.chat-btn:hover {
+    background: #0056b3;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.item-checkbox {
+    margin-right: 15px;
+}
+
+.item-image {
+    max-width: 100px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.item-image:hover {
+    transform: scale(1.05);
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.item-price {
+    color: #007bff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.item-quantity {
+    margin-bottom: 10px;
+}
+
+.item-quantity label {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.item-quantity input {
+    width: 60px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.edit-item, .remove-item {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-item:hover {
+    background: #0056b3;
+}
+
+.remove-item {
+    background: #e74c3c;
+}
+
+.remove-item:hover {
+    background: #c0392b;
+}
+
+.cart-summary {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.cart-summary h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cart-summary p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.voucher-section {
+    margin-bottom: 20px;
+}
+
+.voucher-section label {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.voucher-section input {
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+.apply-voucher {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-voucher:hover {
+    background: #218838;
+}
+
+.checkout-btn {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.checkout-btn:hover {
+    background: #218838;
+}
+
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .item-details {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .item-quantity input {
+        width: 100%;
+    }
+}
